@@ -1,0 +1,1057 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width = 620">
+<meta name="robots" content="INDEX, FOLLOW">
+<meta name="keywords" content="DuRaRaRa, デュラララ, MUSHOKU, N33T">
+<meta name="description" content="MUSHOKU | N33T">
+<title>MUSHOKU | N33T</title>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/dot-luv/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="http://mushoku.tk/css/style.css?1.2.3.4" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+<script type="text/javascript">
+/* <![CDATA[ */
+google.load("language", "1");
+google.load("jquery", "1");
+google.load("jqueryui", "1");
+duraUrl = "http://mushoku.tk";
+GlobalMessageMaxLength = 140;
+useComet = 1;
+accessTime = 1543518714;
+RecaptchaOptions = {
+	theme : 'white'
+};
+/* ]]> */
+</script><script src="http://www.google.com/uds/?file=language&amp;v=1" type="text/javascript"></script><script src="http://www.google.com/uds/api/language/1.0/56fdcd67fffdfab0d072a8ac4d438ab3/default+ru.I.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/translator.js?1.2.3.4"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/language/ru-RU.js?1.2.3.4"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/jquery.bubble.js?1.2.3.4"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+function preload(arrayOfImages)
+{
+	$(arrayOfImages).each(function()
+	{
+		//(new Image()).src = this;
+		$('<img/>')[0].src = this;
+	});
+}
+
+preload([
+'http://mushoku.tk/css/icon/bakyura.png','http://mushoku.tk/css/icon/bepo.png','http://mushoku.tk/css/icon/bh.png','http://mushoku.tk/css/icon/chii.png','http://mushoku.tk/css/icon/chinese.png','http://mushoku.tk/css/icon/ciel.png','http://mushoku.tk/css/icon/dango.png','http://mushoku.tk/css/icon/darkblue.png','http://mushoku.tk/css/icon/gg.png','http://mushoku.tk/css/icon/hakumen.png','http://mushoku.tk/css/icon/hana.png','http://mushoku.tk/css/icon/hoshi.png','http://mushoku.tk/css/icon/izaya.png','http://mushoku.tk/css/icon/kanra.png','http://mushoku.tk/css/icon/keroro.png','http://mushoku.tk/css/icon/koukin.png','http://mushoku.tk/css/icon/lady.png','http://mushoku.tk/css/icon/law.png','http://mushoku.tk/css/icon/lolita.png','http://mushoku.tk/css/icon/meme.png','http://mushoku.tk/css/icon/mika.png','http://mushoku.tk/css/icon/mudgreen.png','http://mushoku.tk/css/icon/nozomu.png','http://mushoku.tk/css/icon/selty.png','http://mushoku.tk/css/icon/setton.png','http://mushoku.tk/css/icon/shingen.png','http://mushoku.tk/css/icon/shinra.png','http://mushoku.tk/css/icon/shizuo.png','http://mushoku.tk/css/icon/simon.png','http://mushoku.tk/css/icon/sizuo.png','http://mushoku.tk/css/icon/soncho.png','http://mushoku.tk/css/icon/tanaka.png','http://mushoku.tk/css/icon/tero.png','http://mushoku.tk/css/icon/woman.png','http://mushoku.tk/css/icon/zaika.png','http://mushoku.tk/css/icon/zawa.png']);
+
+$(function()
+{
+	var iconElement = $("ul.icons label");
+	iconElement.find('img').css({
+		'border' : '1px #fff solid'
+	});
+	iconElement.click(function()
+	{
+		iconElement.find('input:not(:checked)').prev().children('img').css({
+			'border' : '1px #ffffff solid'
+		});
+		// If in case clicking the label doesn't provide the checked attribute to its sibling input[type=radio]
+		$(this).find('input:radio').attr('checked', 'checked');
+		$(this).find('img').css({
+			'border' : '1px #d90000 solid'
+		});
+	});
+});
+/* ]]> */
+</script>
+<!-- header here --></head>
+<body>
+<div id="body">
+<div id="login" class="container">
+<form action="#" method="post">
+
+<div class="language">
+<select name="language">
+<option value="id-ID">Bahasa Indonesia</option>
+<option value="de-DE">Deutsch</option>
+<option value="en-US">English</option>
+<option value="es-ES">Español</option>
+<option value="eo">Esperanto</option>
+<option value="tl-PH">Filipino</option>
+<option value="it-IT">Italiano</option>
+<option value="pl-PL">Polska</option>
+<option value="pt-BR">Português(Brazil)</option>
+<option value="tr-TR">Türkçe</option>
+<option value="ru-RU" selected="selected">Русский</option>
+<option value="he-IL">עברית‎</option>
+<option value="zh-CN">中文(簡体)</option>
+<option value="zh-TW">中文(繁體)</option>
+<option value="ja-JP">日本語</option>
+<option value="ko-KR">한국어</option>
+</select>
+</div>
+
+<ul class="icons" id="avatar">
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bakyura.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="bakyura">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bepo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="bepo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bh.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="bh">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/chii.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="chii">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/chinese.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="chinese">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/ciel.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="ciel">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/dango.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="dango">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/darkblue.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="darkblue">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/gg.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="gg">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hakumen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hakumen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hana.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hana">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hoshi.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hoshi">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/izaya.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="izaya">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/kanra.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="kanra">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/keroro.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="keroro">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/koukin.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="koukin">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/lady.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="lady">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/law.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="law">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/lolita.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="lolita">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/meme.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="meme">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/mika.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="mika">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/mudgreen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="mudgreen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/nozomu.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="nozomu">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/selty.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="selty">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/setton.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="setton">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shingen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shingen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shinra.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shinra">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shizuo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shizuo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/simon.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="simon">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/sizuo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="sizuo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/soncho.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="soncho">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/tanaka.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="tanaka">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/tero.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="tero">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/woman.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="woman">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/zaika.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="zaika">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/zawa.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="zawa">
+</label>
+</li>
+</ul>
+
+<div class="logo">
+<img src="http://mushoku.tk/images/mushoku.png">
+</div>
+
+<div class="field">
+<input type="text" name="name" value="" size="10" maxlength="40" class="textbox">
+<input type="submit" name="login" value="Войти" class="button">
+</div>
+
+<div class="insider">
+<p>0 пользователей онлайн!</p>
+<p class="rooms">КОМНАТЫ (0) &gt;&gt; No Room</p>
+</div>
+
+<input type="hidden" name="token" value="6c0d4398d161c7afaf938d53dcdde578">
+
+</form>
+
+<div class="footer">
+<!-- footer here --></div>
+<div class="languageLinks">
+<a href="http://mushoku.tk/?language=id-ID">Bahasa Indonesia</a> | 
+<a href="http://mushoku.tk/?language=de-DE">Deutsch</a> | 
+<a href="http://mushoku.tk/?language=en-US">English</a> | 
+<a href="http://mushoku.tk/?language=es-ES">Español</a> | 
+<a href="http://mushoku.tk/?language=eo">Esperanto</a> | 
+<a href="http://mushoku.tk/?language=tl-PH">Filipino</a> | 
+<a href="http://mushoku.tk/?language=it-IT">Italiano</a> | 
+<a href="http://mushoku.tk/?language=pl-PL">Polska</a> | 
+<a href="http://mushoku.tk/?language=pt-BR">Português(Brazil)</a> | 
+<a href="http://mushoku.tk/?language=tr-TR">Türkçe</a> | 
+<a href="http://mushoku.tk/?language=ru-RU">Русский</a> | 
+<a href="http://mushoku.tk/?language=he-IL">עברית‎</a> | 
+<a href="http://mushoku.tk/?language=zh-CN">中文(簡体)</a> | 
+<a href="http://mushoku.tk/?language=zh-TW">中文(繁體)</a> | 
+<a href="http://mushoku.tk/?language=ja-JP">日本語</a> | 
+<a href="http://mushoku.tk/?language=ko-KR">한국어</a> | 
+</div>
+<div class="copyright">
+<a href="http://mushoku.tk/admin/">Admin</a> | DLC Copyright © 2010 <a href="http://suin.asia/">Suin</a> | <a href="http://github.com/schnabear/drrr-like-chat/">GitHub</a> | <a href="http://mushoku.tk/page/readme/">Read Me</a> | <a href="http://mushoku.tk/page/about/">About</a>
+</div>
+</div></div>
+
+
+</body></html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width = 620">
+<meta name="robots" content="INDEX, FOLLOW">
+<meta name="keywords" content="DuRaRaRa, デュラララ, MUSHOKU, N33T">
+<meta name="description" content="MUSHOKU | N33T">
+<title>MUSHOKU | N33T</title>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/dot-luv/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="http://mushoku.tk/css/style.css?1.2.3.4" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+<script type="text/javascript">
+/* <![CDATA[ */
+google.load("language", "1");
+google.load("jquery", "1");
+google.load("jqueryui", "1");
+duraUrl = "http://mushoku.tk";
+GlobalMessageMaxLength = 140;
+useComet = 1;
+accessTime = 1543518714;
+RecaptchaOptions = {
+	theme : 'white'
+};
+/* ]]> */
+</script><script src="http://www.google.com/uds/?file=language&amp;v=1" type="text/javascript"></script><script src="http://www.google.com/uds/api/language/1.0/56fdcd67fffdfab0d072a8ac4d438ab3/default+ru.I.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/translator.js?1.2.3.4"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/language/ru-RU.js?1.2.3.4"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/jquery.bubble.js?1.2.3.4"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+function preload(arrayOfImages)
+{
+	$(arrayOfImages).each(function()
+	{
+		//(new Image()).src = this;
+		$('<img/>')[0].src = this;
+	});
+}
+
+preload([
+'http://mushoku.tk/css/icon/bakyura.png','http://mushoku.tk/css/icon/bepo.png','http://mushoku.tk/css/icon/bh.png','http://mushoku.tk/css/icon/chii.png','http://mushoku.tk/css/icon/chinese.png','http://mushoku.tk/css/icon/ciel.png','http://mushoku.tk/css/icon/dango.png','http://mushoku.tk/css/icon/darkblue.png','http://mushoku.tk/css/icon/gg.png','http://mushoku.tk/css/icon/hakumen.png','http://mushoku.tk/css/icon/hana.png','http://mushoku.tk/css/icon/hoshi.png','http://mushoku.tk/css/icon/izaya.png','http://mushoku.tk/css/icon/kanra.png','http://mushoku.tk/css/icon/keroro.png','http://mushoku.tk/css/icon/koukin.png','http://mushoku.tk/css/icon/lady.png','http://mushoku.tk/css/icon/law.png','http://mushoku.tk/css/icon/lolita.png','http://mushoku.tk/css/icon/meme.png','http://mushoku.tk/css/icon/mika.png','http://mushoku.tk/css/icon/mudgreen.png','http://mushoku.tk/css/icon/nozomu.png','http://mushoku.tk/css/icon/selty.png','http://mushoku.tk/css/icon/setton.png','http://mushoku.tk/css/icon/shingen.png','http://mushoku.tk/css/icon/shinra.png','http://mushoku.tk/css/icon/shizuo.png','http://mushoku.tk/css/icon/simon.png','http://mushoku.tk/css/icon/sizuo.png','http://mushoku.tk/css/icon/soncho.png','http://mushoku.tk/css/icon/tanaka.png','http://mushoku.tk/css/icon/tero.png','http://mushoku.tk/css/icon/woman.png','http://mushoku.tk/css/icon/zaika.png','http://mushoku.tk/css/icon/zawa.png']);
+
+$(function()
+{
+	var iconElement = $("ul.icons label");
+	iconElement.find('img').css({
+		'border' : '1px #fff solid'
+	});
+	iconElement.click(function()
+	{
+		iconElement.find('input:not(:checked)').prev().children('img').css({
+			'border' : '1px #ffffff solid'
+		});
+		// If in case clicking the label doesn't provide the checked attribute to its sibling input[type=radio]
+		$(this).find('input:radio').attr('checked', 'checked');
+		$(this).find('img').css({
+			'border' : '1px #d90000 solid'
+		});
+	});
+});
+/* ]]> */
+</script>
+<!-- header here --></head>
+<body>
+<div id="body">
+<div id="login" class="container">
+<form action="#" method="post">
+
+<div class="language">
+<select name="language">
+<option value="id-ID">Bahasa Indonesia</option>
+<option value="de-DE">Deutsch</option>
+<option value="en-US">English</option>
+<option value="es-ES">Español</option>
+<option value="eo">Esperanto</option>
+<option value="tl-PH">Filipino</option>
+<option value="it-IT">Italiano</option>
+<option value="pl-PL">Polska</option>
+<option value="pt-BR">Português(Brazil)</option>
+<option value="tr-TR">Türkçe</option>
+<option value="ru-RU" selected="selected">Русский</option>
+<option value="he-IL">עברית‎</option>
+<option value="zh-CN">中文(簡体)</option>
+<option value="zh-TW">中文(繁體)</option>
+<option value="ja-JP">日本語</option>
+<option value="ko-KR">한국어</option>
+</select>
+</div>
+
+<ul class="icons" id="avatar">
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bakyura.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="bakyura">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bepo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="bepo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bh.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="bh">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/chii.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="chii">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/chinese.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="chinese">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/ciel.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="ciel">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/dango.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="dango">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/darkblue.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="darkblue">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/gg.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="gg">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hakumen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hakumen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hana.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hana">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hoshi.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hoshi">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/izaya.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="izaya">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/kanra.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="kanra">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/keroro.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="keroro">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/koukin.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="koukin">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/lady.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="lady">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/law.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="law">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/lolita.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="lolita">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/meme.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="meme">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/mika.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="mika">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/mudgreen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="mudgreen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/nozomu.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="nozomu">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/selty.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="selty">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/setton.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="setton">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shingen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shingen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shinra.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shinra">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shizuo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shizuo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/simon.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="simon">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/sizuo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="sizuo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/soncho.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="soncho">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/tanaka.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="tanaka">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/tero.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="tero">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/woman.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="woman">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/zaika.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="zaika">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/zawa.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="zawa">
+</label>
+</li>
+</ul>
+
+<div class="logo">
+<img src="http://mushoku.tk/images/mushoku.png">
+</div>
+
+<div class="field">
+<input type="text" name="name" value="" size="10" maxlength="40" class="textbox">
+<input type="submit" name="login" value="Войти" class="button">
+</div>
+
+<div class="insider">
+<p>0 пользователей онлайн!</p>
+<p class="rooms">КОМНАТЫ (0) &gt;&gt; No Room</p>
+</div>
+
+<input type="hidden" name="token" value="6c0d4398d161c7afaf938d53dcdde578">
+
+</form>
+
+<div class="footer">
+<!-- footer here --></div>
+<div class="languageLinks">
+<a href="http://mushoku.tk/?language=id-ID">Bahasa Indonesia</a> | 
+<a href="http://mushoku.tk/?language=de-DE">Deutsch</a> | 
+<a href="http://mushoku.tk/?language=en-US">English</a> | 
+<a href="http://mushoku.tk/?language=es-ES">Español</a> | 
+<a href="http://mushoku.tk/?language=eo">Esperanto</a> | 
+<a href="http://mushoku.tk/?language=tl-PH">Filipino</a> | 
+<a href="http://mushoku.tk/?language=it-IT">Italiano</a> | 
+<a href="http://mushoku.tk/?language=pl-PL">Polska</a> | 
+<a href="http://mushoku.tk/?language=pt-BR">Português(Brazil)</a> | 
+<a href="http://mushoku.tk/?language=tr-TR">Türkçe</a> | 
+<a href="http://mushoku.tk/?language=ru-RU">Русский</a> | 
+<a href="http://mushoku.tk/?language=he-IL">עברית‎</a> | 
+<a href="http://mushoku.tk/?language=zh-CN">中文(簡体)</a> | 
+<a href="http://mushoku.tk/?language=zh-TW">中文(繁體)</a> | 
+<a href="http://mushoku.tk/?language=ja-JP">日本語</a> | 
+<a href="http://mushoku.tk/?language=ko-KR">한국어</a> | 
+</div>
+<div class="copyright">
+<a href="http://mushoku.tk/admin/">Admin</a> | DLC Copyright © 2010 <a href="http://suin.asia/">Suin</a> | <a href="http://github.com/schnabear/drrr-like-chat/">GitHub</a> | <a href="http://mushoku.tk/page/readme/">Read Me</a> | <a href="http://mushoku.tk/page/about/">About</a>
+</div>
+</div></div>
+
+
+</body>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width = 620">
+<meta name="robots" content="INDEX, FOLLOW">
+<meta name="keywords" content="DuRaRaRa, デュラララ, MUSHOKU, N33T">
+<meta name="description" content="MUSHOKU | N33T">
+<title>MUSHOKU | N33T</title>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1/themes/dot-luv/jquery-ui.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="http://mushoku.tk/css/style.css?1.2.3.4" rel="stylesheet" type="text/css" media="screen">
+<script type="text/javascript" src="http://www.google.com/jsapi"></script> 
+<script type="text/javascript">
+/* <![CDATA[ */
+google.load("language", "1");
+google.load("jquery", "1");
+google.load("jqueryui", "1");
+duraUrl = "http://mushoku.tk";
+GlobalMessageMaxLength = 140;
+useComet = 1;
+accessTime = 1543518714;
+RecaptchaOptions = {
+	theme : 'white'
+};
+/* ]]> */
+</script><script src="http://www.google.com/uds/?file=language&amp;v=1" type="text/javascript"></script><script src="http://www.google.com/uds/api/language/1.0/56fdcd67fffdfab0d072a8ac4d438ab3/default+ru.I.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script><script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.17/jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/translator.js?1.2.3.4"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/language/ru-RU.js?1.2.3.4"></script>
+<script type="text/javascript" src="http://mushoku.tk/js/jquery.bubble.js?1.2.3.4"></script>
+<script type="text/javascript">
+/* <![CDATA[ */
+function preload(arrayOfImages)
+{
+	$(arrayOfImages).each(function()
+	{
+		//(new Image()).src = this;
+		$('<img/>')[0].src = this;
+	});
+}
+
+preload([
+'http://mushoku.tk/css/icon/bakyura.png','http://mushoku.tk/css/icon/bepo.png','http://mushoku.tk/css/icon/bh.png','http://mushoku.tk/css/icon/chii.png','http://mushoku.tk/css/icon/chinese.png','http://mushoku.tk/css/icon/ciel.png','http://mushoku.tk/css/icon/dango.png','http://mushoku.tk/css/icon/darkblue.png','http://mushoku.tk/css/icon/gg.png','http://mushoku.tk/css/icon/hakumen.png','http://mushoku.tk/css/icon/hana.png','http://mushoku.tk/css/icon/hoshi.png','http://mushoku.tk/css/icon/izaya.png','http://mushoku.tk/css/icon/kanra.png','http://mushoku.tk/css/icon/keroro.png','http://mushoku.tk/css/icon/koukin.png','http://mushoku.tk/css/icon/lady.png','http://mushoku.tk/css/icon/law.png','http://mushoku.tk/css/icon/lolita.png','http://mushoku.tk/css/icon/meme.png','http://mushoku.tk/css/icon/mika.png','http://mushoku.tk/css/icon/mudgreen.png','http://mushoku.tk/css/icon/nozomu.png','http://mushoku.tk/css/icon/selty.png','http://mushoku.tk/css/icon/setton.png','http://mushoku.tk/css/icon/shingen.png','http://mushoku.tk/css/icon/shinra.png','http://mushoku.tk/css/icon/shizuo.png','http://mushoku.tk/css/icon/simon.png','http://mushoku.tk/css/icon/sizuo.png','http://mushoku.tk/css/icon/soncho.png','http://mushoku.tk/css/icon/tanaka.png','http://mushoku.tk/css/icon/tero.png','http://mushoku.tk/css/icon/woman.png','http://mushoku.tk/css/icon/zaika.png','http://mushoku.tk/css/icon/zawa.png']);
+
+$(function()
+{
+	var iconElement = $("ul.icons label");
+	iconElement.find('img').css({
+		'border' : '1px #fff solid'
+	});
+	iconElement.click(function()
+	{
+		iconElement.find('input:not(:checked)').prev().children('img').css({
+			'border' : '1px #ffffff solid'
+		});
+		// If in case clicking the label doesn't provide the checked attribute to its sibling input[type=radio]
+		$(this).find('input:radio').attr('checked', 'checked');
+		$(this).find('img').css({
+			'border' : '1px #d90000 solid'
+		});
+	});
+});
+/* ]]> */
+</script>
+<!-- header here --></head>
+<body>
+<div id="body">
+<div id="login" class="container">
+<form action="#" method="post">
+
+<div class="language">
+<select name="language">
+<option value="id-ID">Bahasa Indonesia</option>
+<option value="de-DE">Deutsch</option>
+<option value="en-US">English</option>
+<option value="es-ES">Español</option>
+<option value="eo">Esperanto</option>
+<option value="tl-PH">Filipino</option>
+<option value="it-IT">Italiano</option>
+<option value="pl-PL">Polska</option>
+<option value="pt-BR">Português(Brazil)</option>
+<option value="tr-TR">Türkçe</option>
+<option value="ru-RU" selected="selected">Русский</option>
+<option value="he-IL">עברית‎</option>
+<option value="zh-CN">中文(簡体)</option>
+<option value="zh-TW">中文(繁體)</option>
+<option value="ja-JP">日本語</option>
+<option value="ko-KR">한국어</option>
+</select>
+</div>
+
+<ul class="icons" id="avatar">
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bakyura.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="bakyura">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bepo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="bepo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/bh.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="bh">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/chii.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="chii">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/chinese.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="chinese">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/ciel.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="ciel">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/dango.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="dango">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/darkblue.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="darkblue">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/gg.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="gg">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hakumen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hakumen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hana.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hana">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/hoshi.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="hoshi">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/izaya.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="izaya">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/kanra.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="kanra">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/keroro.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="keroro">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/koukin.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="koukin">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/lady.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="lady">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/law.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="law">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/lolita.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="lolita">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/meme.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="meme">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/mika.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255); z-index: 100; overflow: hidden; width: 58px; height: 58px; font-size: 15px;"></div>
+<input type="radio" name="icon" value="mika">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/mudgreen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="mudgreen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/nozomu.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="nozomu">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/selty.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="selty">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/setton.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="setton">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shingen.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shingen">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shinra.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shinra">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/shizuo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="shizuo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/simon.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="simon">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/sizuo.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="sizuo">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/soncho.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="soncho">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/tanaka.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="tanaka">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/tero.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="tero">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/woman.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="woman">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/zaika.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="zaika">
+</label>
+</li>
+<li>
+<label>
+<div style="height:58px; width:58px; position:relative;"><img src="http://mushoku.tk/css/icon/zawa.png" style="position: absolute; left: 0px; top: 0px; border: 1px solid rgb(255, 255, 255);"></div>
+<input type="radio" name="icon" value="zawa">
+</label>
+</li>
+</ul>
+
+<div class="logo">
+<img src="http://mushoku.tk/images/mushoku.png">
+</div>
+
+<div class="field">
+<input type="text" name="name" value="" size="10" maxlength="40" class="textbox">
+<input type="submit" name="login" value="Войти" class="button">
+</div>
+
+<div class="insider">
+<p>0 пользователей онлайн!</p>
+<p class="rooms">КОМНАТЫ (0) &gt;&gt; No Room</p>
+</div>
+
+<input type="hidden" name="token" value="6c0d4398d161c7afaf938d53dcdde578">
+
+</form>
+
+<div class="footer">
+<!-- footer here --></div>
+<div class="languageLinks">
+<a href="http://mushoku.tk/?language=id-ID">Bahasa Indonesia</a> | 
+<a href="http://mushoku.tk/?language=de-DE">Deutsch</a> | 
+<a href="http://mushoku.tk/?language=en-US">English</a> | 
+<a href="http://mushoku.tk/?language=es-ES">Español</a> | 
+<a href="http://mushoku.tk/?language=eo">Esperanto</a> | 
+<a href="http://mushoku.tk/?language=tl-PH">Filipino</a> | 
+<a href="http://mushoku.tk/?language=it-IT">Italiano</a> | 
+<a href="http://mushoku.tk/?language=pl-PL">Polska</a> | 
+<a href="http://mushoku.tk/?language=pt-BR">Português(Brazil)</a> | 
+<a href="http://mushoku.tk/?language=tr-TR">Türkçe</a> | 
+<a href="http://mushoku.tk/?language=ru-RU">Русский</a> | 
+<a href="http://mushoku.tk/?language=he-IL">עברית‎</a> | 
+<a href="http://mushoku.tk/?language=zh-CN">中文(簡体)</a> | 
+<a href="http://mushoku.tk/?language=zh-TW">中文(繁體)</a> | 
+<a href="http://mushoku.tk/?language=ja-JP">日本語</a> | 
+<a href="http://mushoku.tk/?language=ko-KR">한국어</a> | 
+</div>
+<div class="copyright">
+<a href="http://mushoku.tk/admin/">Admin</a> | DLC Copyright © 2010 <a href="http://suin.asia/">Suin</a> | <a href="http://github.com/schnabear/drrr-like-chat/">GitHub</a> | <a href="http://mushoku.tk/page/readme/">Read Me</a> | <a href="http://mushoku.tk/page/about/">About</a>
+</div>
+</div></div>
+
+
+</body></html>
